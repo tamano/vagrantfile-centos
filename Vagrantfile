@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
 
   # アクセスするためのIPアドレスの指定
-  config.vm.network :private_network, ip: "192.168.101.100"
+  config.vm.network :private_network, ip: "192.168.101.101"
 
   config.vm.provider :virtualbox do |vb|
     vb.name = config.vm.hostname
